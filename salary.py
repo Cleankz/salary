@@ -1,20 +1,20 @@
 def sort(N,m = []):
     mas = m
     size = N
-    Flag = True
-    while(Flag):
-        Flag = False
+    done = True # flag - done
+    while(done):
+        done = False
         for i in range(size-1):
             if mas[i] >= mas[i+1]:
                 mas[i], mas[i+1] = mas[i+1], mas[i]
-                Flag = True
+                done = True
     return mas
 
 
 
 
 def SynchronizingTables (N ,ids = [],salary = []):
-    Flag = True
+    done = True # flag - done
     copy_ind = []
     for i in range(N):
         copy_ind.append(ids[i])
