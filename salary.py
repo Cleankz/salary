@@ -1,4 +1,5 @@
 def sort(N,m = []):
+    # сортируем зарплаты
     mas = m
     size = N
     done = True # flag - done
@@ -19,8 +20,8 @@ def SynchronizingTables (N ,ids = [],salary = []):
     for i in range(N):
         copy_ind.append(ids[i])
     
-    sort_salary = sort(N,salary)
-    sort_ind = sort(N,copy_ind)
+    sort_salary = sort(N,salary) # сортируем зарплату
+    sort_ind = sort(N,copy_ind) # сортируем индексы рабочих
     new_array = []
     for x in range(N):
         for y in range(N):
